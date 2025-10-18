@@ -23,9 +23,7 @@ export const mockData = {
   skills: {
     frontend: [
       { name: "React.js", level: "Proficient" },
-      { name: "Next.js", level: "Proficient" },
       { name: "JavaScript (ES6+)", level: "Experienced" },
-      { name: "TypeScript", level: "Proficient" },
       { name: "HTML5 & CSS3", level: "Experienced" },
       { name: "Tailwind CSS", level: "Proficient" },
     ],
@@ -33,7 +31,6 @@ export const mockData = {
       { name: "Node.js", level: "Experienced" },
       { name: "Express.js", level: "Experienced" },
       { name: "RESTful APIs", level: "Proficient" },
-      { name: "GraphQL", level: "Proficient" },
     ],
     database: [
       { name: "MongoDB", level: "Experienced" },
@@ -42,7 +39,6 @@ export const mockData = {
     ],
     toolsAndCloud: [
       { name: "Git & GitHub", level: "Experienced" },
-      { name: "Docker", level: "Proficient" },
       { name: "AWS (S3, EC2)", level: "Experienced" },
       { name: "Vercel", level: "Experienced" },
       { name: "Postman", level: "Experienced" },
@@ -141,15 +137,17 @@ export const mockData = {
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
     { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
   ],
+  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes"],
+
   blogPosts: [
     
-    { title: "AI in 2025: Practical Impact, Not Hype", slug: "ai-in-2025-practical-impact", category: "Industry Insights", readingTime: 9, date: "2025-08-30", excerpt: "Where AI is actually delivering ROI today and how teams can adopt it responsibly.", imageUrl: "https://placehold.co/400x300/0EA5E9/FFFFFF?text=AI+2025", content: [
+    { title: "AI in 2025: Practical Impact, Not Hype", slug: "ai-in-2025-practical-impact", category: "Technical Walkthroughs", readingTime: 9, date: "2025-08-30", excerpt: "Where AI is actually delivering ROI today and how teams can adopt it responsibly.", imageUrl: "https://placehold.co/400x300/0EA5E9/FFFFFF?text=AI+2025", content: [
       "AI in 2025 has moved beyond proof-of-concepts. The most mature wins are in retrieval-augmented generation (RAG), customer support automation, code assist, and forecasting. Organizations that succeed treat AI like a product capability—not a novelty.",
       "RAG systems combine your private data with foundation models. The quality of chunking, embeddings, and evaluation (groundedness, hallucination rate) matters more than raw model size. Tooling has improved, but the fundamentals—data quality and feedback loops—remain the differentiators.",
       "Responsible adoption requires guardrails: data governance, prompt injection defenses, rate limiting, and clear human-in-the-loop workflows for high-risk actions. Measure business metrics (AHT, CSAT, resolution rate) alongside model metrics.",
       "For engineering teams, start with narrow use-cases where failure is cheap and feedback is fast. Build internal playbooks for prompt patterns, evaluation harnesses, and rollout stages. Ship small, learn quickly, and expand where impact is proven."
     ] },
-    { title: "👨‍💻 Java and JavaScript? Same name, but worlds apart!", slug: "java-vs-javascript-same-name-different-worlds", category: "Industry Insights", readingTime: 4, date: "2025-10-12", excerpt: "If you've ever thought they were related, you're not alone. It's one of the most common points of confusion in the tech world.", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Java+vs+JS", content: `If you've ever thought they were related, you're not alone. It's one of the most common points of confusion in the tech world. But the truth is, comparing Java to JavaScript is like comparing Neo 🕶️ to John Wick 🔫. Both are legendary, but they operate in completely different universes and with very different skill sets.
+  { title: "👨‍💻 Java and JavaScript? Same name, but worlds apart!", slug: "java-vs-javascript-same-name-different-worlds", category: "Learning Notes", readingTime: 4, date: "2025-10-12", excerpt: "If you've ever thought they were related, you're not alone. It's one of the most common points of confusion in the tech world.", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Java+vs+JS", content: `If you've ever thought they were related, you're not alone. It's one of the most common points of confusion in the tech world. But the truth is, comparing Java to JavaScript is like comparing Neo 🕶️ to John Wick 🔫. Both are legendary, but they operate in completely different universes and with very different skill sets.
 
 ![Java vs JavaScript Comparison](https://media.licdn.com/dms/image/v2/D5622AQGHXbuR3-7gKQ/feedshare-shrink_800/B56ZPZmJ0dHoAg-/0/1734522482500?e=1762992000&v=beta&t=6vXnmvxOL-mTretji3rR2q0biGUOZl0Sv6FoHfmBEog)
 
