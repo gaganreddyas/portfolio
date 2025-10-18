@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrainCircuit, GitMerge, Code } from 'lucide-react';
+import { Cloud, ServerIcon, Zap } from 'lucide-react';
 
 export const mockData = {
   personalInfo: {
@@ -52,9 +52,9 @@ export const mockData = {
     ]
   },
   learning: [
-      { title: "System Design Principles", reason: "To build scalable and resilient architectures for enterprise-level applications.", icon: <BrainCircuit/> },
-      { title: "Advanced CI/CD Pipelines", reason: "To automate testing and deployment, improving development velocity and reliability.", icon: <GitMerge/> },
-      { title: "WebAssembly (WASM)", reason: "Exploring its potential for performance-critical computations on the web.", icon: <Code/> }
+    { title: "Cloud & AWS Services", reason: "Deploy and scale apps with S3, EC2, Lambda; cost-aware hosting.", icon: <Cloud/> },
+    { title: "Full-Stack Web Development", reason: "Build fullstack apps with React + Node — focus on clean code.", icon: <ServerIcon/> },
+    { title: "API Integration & Automation", reason: "Integrate and automate REST APIs; test with Postman and CI.", icon: <Zap/> }
   ],
   featuredProjects: [
     {
