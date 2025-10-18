@@ -104,6 +104,28 @@ export const mockData = {
       slug: "medifundr",
       readingTime: "3 min"
     },
+    {
+      title: "Choco Factory Revamped",
+      description: "A premium, chocolate-themed responsive landing page showcasing elegant UI, smooth animations, and mobile-friendly navigation.",
+      techStack: ["HTML5", "CSS3", "JavaScript", "Google Fonts (Poppins, Playfair Display)", "AWS S3 (static hosting)"],
+      liveUrl: "https://choco-factory-revamped7.s3.us-east-1.amazonaws.com/Choco-Factory-Revamped-main/index.html",
+      githubUrl: "https://github.com/gaganreddyas/Choco-Factory-Revamped",
+      imageUrl: "https://raw.githubusercontent.com/gaganreddyas/Choco-Factory-Revamped/main/assets/Caro_9.webp",
+      features: [
+        "Responsive, mobile-first layout",
+        "Polished hero with carousel previews",
+        "Smooth, performant micro-interactions",
+        "Optimized images and fonts for fast loads"
+      ],
+      caseStudy: {
+        challenge: "Craft a visual identity for a premium chocolate brand while maintaining fast load times on mobile and preserving crisp imagery.",
+        solution: "Implemented a responsive layout with prioritized content loading, compressed imagery, and subtle CSS-driven animations to enhance perceived performance.",
+        learning: "Improved skills in responsive design, image optimization for web, and balancing aesthetics with performance for marketing pages."
+      },
+      date: "2025-10-17",
+      slug: "choco-factory-revamped",
+      readingTime: "2 min"
+    },
     
   ],
   allProjects: [
