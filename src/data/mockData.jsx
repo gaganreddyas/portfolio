@@ -215,8 +215,9 @@ The naming similarity was purely a marketing strategy that worked brilliantly—
 *Have you ever been confused by the Java vs JavaScript naming? Share your experience in the comments below!*` },
   ],
   experience: [
-    { role: "Full Stack Developer Intern", company: "Tech Solutions Inc.", period: "Jun 2024 - Dec 2024", description: "Contributed to a client-facing web app using React and Node.js. Implemented features, fixed bugs, and participated in agile cycles, gaining experience with CI/CD and AWS.", skills: ["React", "Node.js", "AWS", "Agile"], logo: "https://placehold.co/40x40/ffffff/3B82F6?text=TSI" },
-    { role: "Open Source Contributor", company: "Project XYZ", period: "Jan 2024 - May 2024", description: "Actively contributed to a popular open-source library by fixing issues, improving documentation, and adding functionality, collaborating with a global team.", skills: ["TypeScript", "Git", "Collaboration"], logo: "https://placehold.co/40x40/ffffff/8B5CF6?text=XYZ" },
-    { role: "Hackathon Winner - 1st Place", company: "InnovateFest 2023", period: "Oct 2023", description: "Led a team of 3 to build a community help app prototype in 48 hours. Developed the full-stack solution from scratch with a mobile-first UX.", skills: ["React Native", "Firebase", "Leadership"], logo: "https://placehold.co/40x40/ffffff/10B981?text=IF" }
+    { role: "Core Team Member — Generative AI Study Jam", company: "GDG Sri Venkateswara College of Engineering", period: "Sep 2024 - Mar 2025", description: "Guided 100+ students through cloud and GenAI labs on Google Cloud Platform; resolved technical doubts and supported hands-on sessions.", skills: ["Cloud", "GenAI", "Mentoring"], logo: "https://placehold.co/40x40/ffffff/3B82F6?text=GDG" },
+    { role: "AWS Certified Cloud Practitioner", company: "Amazon Web Services", period: "Sep 2024", description: "Validated cloud fundamentals including compute, storage, and cost optimization; deployed personal projects to S3/EC2.", skills: ["AWS", "S3", "EC2"], logo: "https://placehold.co/40x40/ffffff/FF9900?text=AWS" },
+    { role: "Hands-on Full-Stack Development", company: "Personal Projects", period: "2024 - Present", description: "Building real-world projects using React, Node.js, and Express; focus on responsive UIs, API integrations, and cloud deployment.", skills: ["React", "Node.js", "Express", "AWS"], logo: "https://placehold.co/40x40/ffffff/6366F1?text=Code" },
+    
   ]
 };
