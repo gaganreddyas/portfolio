@@ -104,48 +104,7 @@ export const mockData = {
       slug: "medifundr",
       readingTime: "3 min"
     },
-    {
-      title: "Enterprise E-commerce Platform",
-      description: "Developed a full-stack e-commerce solution designed to handle high-traffic and complex product catalogs, resulting in a 30% improvement in page load times over previous benchmarks.",
-      techStack: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-      liveUrl: "#",
-      githubUrl: "#",
-      imageUrl: "https://placehold.co/600x400/3B82F6/FFFFFF?text=E-commerce+Platform",
-      features: ["Real-time inventory sync", "Secure payment gateway", "Admin analytics dashboard", "Optimized for Core Web Vitals"],
-      caseStudy: {
-          challenge: "The primary challenge was to build a highly performant e-commerce site that could handle a large, dynamic inventory without sacrificing user experience. This involved optimizing database queries, implementing efficient state management, and ensuring fast initial page loads.",
-          solution: "I designed a MERN stack architecture with Redux for predictable state management. For performance, I implemented server-side pagination for product lists, lazy loading for images, and heavily optimized MongoDB queries. The Stripe API was integrated for a secure and seamless checkout process.",
-          learning: "This project was a deep dive into performance optimization. I learned the critical importance of minimizing bundle size and the direct impact of efficient database indexing on application speed. It solidified my understanding of building scalable, production-ready applications."
-      }
-    },
-    {
-      title: "High-Concurrency Chat Application",
-      description: "Engineered a real-time messaging application using WebSockets, capable of supporting over 1,000 concurrent users with an average message latency of under 80ms.",
-      techStack: ["React", "Node.js", "Socket.io", "Redis", "JWT"],
-      liveUrl: "#",
-      githubUrl: "#",
-      imageUrl: "https://placehold.co/600x400/8B5CF6/FFFFFF?text=Real-Time+Chat",
-      features: ["Group & private chats", "User presence indicators", "End-to-end encryption (conceptual)", "Scalable architecture"],
-      caseStudy: {
-          challenge: "The main technical hurdle was managing thousands of persistent WebSocket connections efficiently and broadcasting messages in real-time with minimal latency. Ensuring the backend could scale to handle spikes in concurrent users was paramount.",
-          solution: "I utilized Node.js with Socket.io for the real-time communication layer. To handle state across multiple server instances (for scalability), I integrated Redis as a message broker and session store. JWT was used for secure, stateless authentication of socket connections.",
-          learning: "This project taught me the complexities of stateful applications and the power of a microservices-oriented approach with tools like Redis. I gained significant experience in designing systems for high-concurrency and real-time data flow."
-      }
-    },
-    {
-      title: "Collaborative Task Management Dashboard",
-      description: "Built an intuitive project management tool with a drag-and-drop interface that increased team productivity by 25% through streamlined task tracking and real-time updates.",
-      techStack: ["React", "Context API", "Express", "MongoDB", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      imageUrl: "https://placehold.co/600x400/10B981/FFFFFF?text=Project+Dashboard",
-      features: ["Kanban boards", "Real-time collaboration", "Progress visualization", "Role-based access control"],
-      caseStudy: {
-          challenge: "Creating a seamless drag-and-drop experience that updated the backend in real-time for all connected clients was the most complex part. The state logic needed to be robust to avoid race conditions and ensure a consistent view for all users.",
-          solution: "I used React's Context API for state management to avoid prop drilling and a library like `react-beautiful-dnd` for the drag-and-drop functionality. The backend, built with Express.js, would receive the updated task order and persist it to MongoDB, then broadcast the changes to other clients via a lightweight notification system.",
-          learning: "This project was an excellent exercise in complex frontend state management and user interface design. I learned how to create intuitive, interactive user experiences and the importance of optimistic UI updates to make the application feel instantaneous."
-      }
-    },
+    
   ],
   allProjects: [
   { title: "TaskMaster AI", category: "Fullstack", tech: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Vercel", "Render"], desc: "A modern task management app with AI-powered priority scoring, built on a MERN stack with a clean monorepo setup for quick startup and deployment.", liveUrl: "https://taskmaster-ai-puce.vercel.app/", githubUrl: "https://github.com/gaganreddyas/taskmaster-ai", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/taskmaster-ai/main/images/thumbnail.png" },
@@ -155,6 +114,7 @@ export const mockData = {
   { title: "Choco Factory Revamped", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Google Fonts (Poppins, Playfair Display)", "AWS S3 (static hosting)"], desc: "A premium, chocolate-themed responsive landing page showcasing elegant UI, smooth animations, and mobile-friendly navigation.", liveUrl: "https://choco-factory-revamped7.s3.us-east-1.amazonaws.com/Choco-Factory-Revamped-main/index.html", githubUrl: "https://github.com/gaganreddyas/Choco-Factory-Revamped", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/Choco-Factory-Revamped/main/assets/Caro_9.webp" },
   { title: "scoreKeeper", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Bulma CSS", "GitHub Pages"], desc: "Lightweight, mobile-friendly score tracking app for quick player/team setup, instant updates, and easy resets during games.", liveUrl: "https://gaganreddyas.github.io/scoreKeeper/", githubUrl: "https://github.com/gaganreddyas/scoreKeeper", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/scoreKeeper/main/assets/ping_pong.avif" },
   { title: "XOX-Game", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"], desc: "Classic two-player Tic‑Tac‑Toe with clean UI, turn alternation, instant win/draw detection, and replay controls.", liveUrl: "https://gaganreddyas.github.io/XOX-Game/", githubUrl: "https://github.com/gaganreddyas/XOX-Game", imageUrl: "https://placehold.co/400x300/EF4444/FFFFFF?text=XOX-Game" },
+  { title: "Stop-Watch", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"], desc: "Space‑themed stopwatch with keyboard shortcuts, lap tracking, and a clean, responsive UI, deployed on GitHub Pages.", liveUrl: "https://gaganreddyas.github.io/Stop-Watch/", githubUrl: "https://github.com/gaganreddyas/Stop-Watch", imageUrl: "https://placehold.co/400x300/111827/FFFFFF?text=Stop-Watch", features: ["Start/Pause (Space), Reset (Backspace), Lap (Enter), Clear Lap (F2)", "Lap list with clear option", "Accurate timing with millisecond display", "Responsive, keyboard-first UX", "Lightweight, no external dependencies"], caseStudy: { challenge: "Design a stopwatch that feels instantaneous and keyboard-first, while keeping the codebase dependency-free and accessible.", solution: "Implemented a precise timer loop with debounced controls, mapped ergonomic keyboard shortcuts, and structured UI for quick scanning of laps and controls.", learning: "Refined event handling for keyboard inputs, ensured timing accuracy and drift handling, and polished a responsive, minimalist interface for focus and speed." }, featured: false, date: "2025-10-17", slug: "stop-watch", readingTime: "1 min" },
     { title: "E-commerce Platform", category: "Fullstack", tech: ["React", "Node.js", "MongoDB"], desc: "Full-featured online store with Stripe.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/3B82F6/FFFFFF?text=E-commerce" },
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
     { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
