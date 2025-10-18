@@ -23,29 +23,29 @@ export const mockData = {
   skills: {
     frontend: [
       { name: "React.js", level: "Proficient" },
-      { name: "Next.js", level: "Experienced" },
-      { name: "JavaScript (ES6+)", level: "Proficient" },
-      { name: "TypeScript", level: "Experienced" },
-      { name: "HTML5 & CSS3", level: "Proficient" },
+      { name: "Next.js", level: "Proficient" },
+      { name: "JavaScript (ES6+)", level: "Experienced" },
+      { name: "TypeScript", level: "Proficient" },
+      { name: "HTML5 & CSS3", level: "Experienced" },
       { name: "Tailwind CSS", level: "Proficient" },
     ],
     backend: [
-      { name: "Node.js", level: "Proficient" },
-      { name: "Express.js", level: "Proficient" },
+      { name: "Node.js", level: "Experienced" },
+      { name: "Express.js", level: "Experienced" },
       { name: "RESTful APIs", level: "Proficient" },
-      { name: "GraphQL", level: "Experienced" },
+      { name: "GraphQL", level: "Proficient" },
     ],
     database: [
-      { name: "MongoDB", level: "Proficient" },
+      { name: "MongoDB", level: "Experienced" },
       { name: "MySQL", level: "Experienced" },
-      { name: "PostgreSQL", level: "Experienced" },
+      { name: "PostgreSQL", level: "Proficient" },
     ],
     toolsAndCloud: [
-      { name: "Git & GitHub", level: "Proficient" },
-      { name: "Docker", level: "Experienced" },
+      { name: "Git & GitHub", level: "Experienced" },
+      { name: "Docker", level: "Proficient" },
       { name: "AWS (S3, EC2)", level: "Experienced" },
-      { name: "Vercel", level: "Proficient" },
-      { name: "Postman", level: "Proficient" },
+      { name: "Vercel", level: "Experienced" },
+      { name: "Postman", level: "Experienced" },
     ],
     softSkills: [
         "Problem Solving", "Team Collaboration", "Agile Development", "Effective Communication"
