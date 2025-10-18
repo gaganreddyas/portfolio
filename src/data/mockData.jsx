@@ -215,9 +215,9 @@ The naming similarity was purely a marketing strategy that worked brilliantly—
 *Have you ever been confused by the Java vs JavaScript naming? Share your experience in the comments below!*` },
   ],
   experience: [
-    { role: "Core Team Member — Generative AI Study Jam", company: "GDG Sri Venkateswara College of Engineering", period: "Sep 2024 - Mar 2025", description: "Guided 100+ students through cloud and GenAI labs on Google Cloud Platform; resolved technical doubts and supported hands-on sessions.", skills: ["Cloud", "GenAI", "Mentoring"], logo: "https://placehold.co/40x40/ffffff/3B82F6?text=GDG" },
-    { role: "AWS Certified Cloud Practitioner", company: "Amazon Web Services", period: "Sep 2024", description: "Validated cloud fundamentals including compute, storage, and cost optimization; deployed personal projects to S3/EC2.", skills: ["AWS", "S3", "EC2"], logo: "https://placehold.co/40x40/ffffff/FF9900?text=AWS" },
-    { role: "Hands-on Full-Stack Development", company: "Personal Projects", period: "2024 - Present", description: "Building real-world projects using React, Node.js, and Express; focus on responsive UIs, API integrations, and cloud deployment.", skills: ["React", "Node.js", "Express", "AWS"], logo: "https://placehold.co/40x40/ffffff/6366F1?text=Code" },
+  { role: "Hands-on Full-Stack Development", company: "Personal Projects", period: "2024 - Present", description: "Building real-world projects using React, Node.js, and Express; focus on responsive UIs, API integrations, and cloud deployment.", skills: ["React", "Node.js", "Express", "AWS"], logo: "https://placehold.co/40x40/ffffff/6366F1?text=Code" },
+  { role: "AWS Certified Cloud Practitioner", company: "Amazon Web Services", period: "Sep 2025", description: "Validated cloud fundamentals including compute, storage, and cost optimization; deployed personal projects to S3/EC2.", skills: ["AWS", "S3", "EC2"], logo: "https://placehold.co/40x40/ffffff/FF9900?text=AWS" },
+  { role: "Core Team Member — Generative AI Study Jam", company: "GDG Sri Venkateswara College of Engineering", period: "Sep 2024 - Mar 2025", description: "Guided 100+ students through cloud and GenAI labs on Google Cloud Platform; resolved technical doubts and supported hands-on sessions.", skills: ["Cloud", "GenAI", "Mentoring"], logo: "https://placehold.co/40x40/ffffff/3B82F6?text=GDG" },
     
   ]
 };
