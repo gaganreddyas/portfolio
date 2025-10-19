@@ -5,11 +5,14 @@ import AdCard from '../components/ui/AdCard.jsx';
 
 export default function BlogList() {
   const [visibleCount, setVisibleCount] = useState(6);
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const increment = 4;
   const posts = useMemo(() => mockData.blogPosts, []);
+  const categories = useMemo(() => mockData.blogCategories || [], []);
   useEffect(() => { setVisibleCount(6); }, []);
-  const visiblePosts = posts.slice(0, visibleCount);
-  const canShowMore = visibleCount < posts.length;
+  const filteredPosts = selectedCategory === 'All' ? posts : posts.filter(p => p.category === selectedCategory);
+  const visiblePosts = filteredPosts.slice(0, visibleCount);
+  const canShowMore = visibleCount < filteredPosts.length;
   return (
     <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100">
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -21,6 +24,20 @@ export default function BlogList() {
           </div>
           <Link to="/" className="text-blue-600">Go to Home</Link>
         </div>
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold">Blog & Articles</h1>
+          <div className="mt-4 flex gap-2 flex-wrap">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => { setSelectedCategory(cat); setVisibleCount(6); }}
+                className={`px-3 py-1 rounded-full text-sm font-medium ${selectedCategory === cat ? 'bg-blue-600 text-white' : 'border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300'}`}>
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {visiblePosts.map((post) => (
             <Link key={post.slug} to={`/blog/${post.slug}`} className="block h-full">

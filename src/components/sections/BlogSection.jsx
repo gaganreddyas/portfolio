@@ -11,7 +11,7 @@ const BlogSection = () => {
     const [filter, setFilter] = useState('All');
     const [visibleCount, setVisibleCount] = useState(4);
     const increment = 2;
-    const categories = ['All', 'Technical Tutorials', 'Project Learnings', 'Industry Insights', 'Problem Solving'];
+    const categories = mockData.blogCategories || ['All'];
     const filteredPosts = useMemo(() => mockData.blogPosts.filter(p => filter === 'All' || p.category === filter), [filter]);
     useEffect(() => { setVisibleCount(4); }, [filter]);
     const visiblePosts = filteredPosts.slice(0, visibleCount);
