@@ -137,7 +137,7 @@ export const mockData = {
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
     { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
   ],
-  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes", "Cloud Computing"],
+  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes"],
 
   blogPosts: [
     
@@ -213,7 +213,7 @@ The naming similarity was purely a marketing strategy that worked brilliantly—
   { 
     title: "AWS us-east-1 Outage: A Cloud Resilience Lesson",
     slug: "aws-us-east-1-outage-cloud-resilience-lesson",
-    category: "Cloud Computing",
+    category: "Learning Notes",
     readingTime: 5,
     date: "2025-10-20",
     excerpt: "A major AWS us-east-1 outage today sent ripples across the internet, transforming a simple website visit into a critical lesson on cloud dependencies, system architecture, and the true meaning of resilience. This post unpacks what happened and why it matters.",
