@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <ThemeProvider>
-      <div className="bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 font-sans antialiased">
+      <div className="bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 font-sans antialiased overflow-x-hidden">
         <motion.div className="fixed top-0 left-0 right-0 h-1 bg-blue-500 origin-left z-50" style={{ scaleX }} />
         <Header />
         <main className="pt-20">
