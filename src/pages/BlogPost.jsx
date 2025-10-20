@@ -34,7 +34,9 @@ export default function BlogPost() {
           <span>{post.date}</span>
           <span>{post.readingTime} min read</span>
         </div>
-        <img src={post.imageUrl} alt={post.title} className="mt-6 w-full h-64 object-cover rounded" />
+        <div className="mt-6 w-full rounded overflow-hidden bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+          <img src={post.imageUrl} alt={post.title} className="w-full object-contain object-center max-h-[48vh] md:max-h-96" />
+        </div>
         <article className="prose dark:prose-invert max-w-none mt-8">
           {Array.isArray(post.content)
             ? post.content.map((para, idx) => <p key={idx}>{para}</p>)
@@ -44,7 +46,7 @@ export default function BlogPost() {
                     <img 
                       src={src} 
                       alt={alt} 
-                      className="w-full max-w-lg mx-auto my-4 rounded-md shadow-sm border border-slate-200 dark:border-slate-700"
+                      className="w-full mx-auto my-4 rounded-md shadow-sm border border-slate-200 dark:border-slate-700 object-contain"
                       {...props}
                     />
                   ),
