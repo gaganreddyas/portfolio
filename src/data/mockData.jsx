@@ -137,7 +137,7 @@ export const mockData = {
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
     { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
   ],
-  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes"],
+  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes", "Cloud Computing"],
 
   blogPosts: [
     
@@ -208,6 +208,48 @@ So, next time someone asks, "Aren't Java and JavaScript the same?", you can shar
 The naming similarity was purely a marketing strategy that worked brilliantly—but it's also created decades of confusion for developers and non-developers alike. Understanding their differences is crucial for anyone looking to build a career in software development.
 
 *Have you ever been confused by the Java vs JavaScript naming? Share your experience in the comments below!*` },
+  
+  // New post added 2025-10-20
+  { 
+    title: "AWS us-east-1 Outage: A Cloud Resilience Lesson",
+    slug: "aws-us-east-1-outage-cloud-resilience-lesson",
+    category: "Cloud Computing",
+    readingTime: 5,
+    date: "2025-10-20",
+    excerpt: "A major AWS us-east-1 outage today sent ripples across the internet, transforming a simple website visit into a critical lesson on cloud dependencies, system architecture, and the true meaning of resilience. This post unpacks what happened and why it matters.",
+    imageUrl: "https://static.withcode.uk/aws-dominoes-diwali.png",
+    content: `Today, a routine attempt to access a major website quickly turned into an unexpected lesson in cloud infrastructure. Instead of the usual quick load, I was greeted with the infamous "504 Gateway Timeout." My initial thought, like many, was to check my own connection – "Did I break something?"
+
+A quick diagnostic confirmed it wasn't my setup; the issue lay far upstream. Soon, the news channels and social media feeds lit up with reports: AWS \`us-east-1\` (N. Virginia), one of Amazon's most critical and foundational regions, was experiencing a significant outage.
+
+### The Domino Effect: Why \`us-east-1\` Matters So Much
+
+The term "domino effect" couldn't be more apt for today's events. While the primary problem, according to AWS, stemmed from issues with DNS resolution of the DynamoDB API endpoint *within* \`us-east-1\`, its impact rapidly rippled across the globe.
+
+Why? Because \`us-east-1\` isn't just another region; it's a linchpin for much of AWS's global infrastructure:
+
+* **Global Services Hub:** Many control planes for essential AWS global services, such as IAM (Identity and Access Management) and parts of Route 53 (DNS), have critical components located in \`us-east-1\`. A problem there means services *anywhere* in the world that depend on these global functions can be affected.
+* **Core Service Dependency:** DynamoDB, the initial point of failure, is a foundational NoSQL database service utilized by dozens of other AWS services. When it stumbles, a cascade of failures across dependent services is almost inevitable.
+* **The "Original" Region:** Being the oldest AWS region, \`us-east-1\` hosts a vast number of mission-critical applications for companies that have built on AWS for years.
+
+The outcome was predictable but no less impactful: dashboards turned red, Slack channels exploded, and major applications ranging from social media to banking platforms experienced significant downtime. For a while, it truly felt like a collective "Ctrl + Alt + Panic" moment for the internet.
+
+### Lessons in Resilience for the Cloud Era
+
+Today's incident serves as a powerful, real-world reminder for anyone involved in cloud architecture, DevOps, or system reliability:
+
+1.  **The Cloud is Powerful, But Not Magical:** While the cloud offers incredible scalability and flexibility, it's not immune to failures. It's a vast, complex network of interconnected systems, and understanding those dependencies is paramount.
+2.  **Resilience Isn’t About Never Failing; It’s About Recovering Fast:** Incidents are inevitable. The true measure of a robust system isn't its absolute uptime (though that's important), but its ability to detect, diagnose, mitigate, and recover swiftly from failures.
+3.  **Multi-Region Architecture Isn’t a Luxury; It’s a Necessity:** For truly critical applications, relying solely on a single cloud region, even a highly available one, introduces a single point of failure. Designing for active-active or active-passive deployment across multiple, geographically diverse regions is essential for business continuity.
+
+### A Day of Unplanned "Fireworks"
+
+This all unfolded on a significant day for many – Diwali. My thoughts are with the on-call engineers working hard in the "war rooms" – dedicated, high-pressure environments where teams rapidly collaborate to diagnose and resolve critical incidents – turning challenges into solutions. Their dedication is truly commendable.
+
+To those whose applications experienced downtime today, know that it's a shared challenge, and you're not alone. And to those whose robust architectures allowed their services to remain resilient: well done.
+
+Happy Diwali everyone! May your lights stay bright, and your servers stay up.`
+  },
   ],
   experience: [
   { role: "Hands-on Full-Stack Development", company: "Personal Projects", period: "2024 - Present", description: "Building real-world projects using React, Node.js, and Express; focus on responsive UIs, API integrations, and cloud deployment.", skills: ["React", "Node.js", "Express", "AWS"], logo: "https://placehold.co/40x40/ffffff/6366F1?text=Code" },
