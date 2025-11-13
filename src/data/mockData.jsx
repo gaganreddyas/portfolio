@@ -217,7 +217,7 @@ The naming similarity was purely a marketing strategy that worked brilliantly—
     readingTime: 5,
     date: "2025-10-20",
     excerpt: "A major AWS us-east-1 outage today sent ripples across the internet, transforming a simple website visit into a critical lesson on cloud dependencies, system architecture, and the true meaning of resilience. This post unpacks what happened and why it matters.",
-  imageUrl: "https://media.licdn.com/dms/image/v2/D5622AQGa94rMGooXSQ/feedshare-shrink_1280/B56ZoBocCoJsAs-/0/1760963971948?e=1762387200&v=beta&t=4EGUirBM36xI3kIyZ1XcVwW3g2Bc5MYPEhoEFMRruY4",
+  imageUrl: "/aws-us-east-1-outage.jpeg",
     content: `Today, a routine attempt to access a major website quickly turned into an unexpected lesson in cloud infrastructure. Instead of the usual quick load, I was greeted with the infamous "504 Gateway Timeout." My initial thought, like many, was to check my own connection – "Did I break something?"
 
 A quick diagnostic confirmed it wasn't my setup; the issue lay far upstream. Soon, the news channels and social media feeds lit up with reports: AWS \`us-east-1\` (N. Virginia), one of Amazon's most critical and foundational regions, was experiencing a significant outage.
