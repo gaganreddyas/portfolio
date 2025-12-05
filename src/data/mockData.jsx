@@ -6,7 +6,11 @@ export const mockData = {
     name: "Gagan Reddy A S",
     title: "Full Stack Developer",
     valueProposition: "I engineer scalable, high-performance web applications that deliver exceptional user experiences and solve complex business challenges.",
-  bio: "I’m a final-year B.Tech student passionate about full-stack and cloud development, with hands-on experience in building real-world applications. My core skills include Java, JavaScript, React.js, and AWS, and I enjoy creating solutions that are both scalable and efficient. I’ve worked on multiple live projects involving responsive design, backend APIs, and cloud deployment. As an Amazon Web Services Certified Cloud Practitioner, I love leveraging cloud technologies to enhance application performance. I take pride in writing clean, maintainable code and constantly push myself to learn modern tools and architectures. My recent work includes projects like TaskMaster AI and MediFundr, showcasing my ability to build end-to-end products. I’m eager to collaborate with innovative teams, solve challenging problems, and grow as a Software Development Engineer.",
+  bio: `Hi, I’m Gagan. I am a final-year B.Tech student in Information Technology at Sri Venkateswara College of Engineering, Tirupati.
+
+My focus lies at the intersection of frontend and backend development, with a strong emphasis on cloud integration. As an AWS Certified Cloud Practitioner, I love blending modern web tools with cloud services to build scalable solutions. My projects, such as TaskMaster AI, reflect my passion for solving practical problems using code.
+
+Beyond development, I have a strong foundation in problem-solving, having completed DSA in Java through NPTEL. I believe in 'learning by doing'—a philosophy you can see in my steady growth across my GitHub and LinkedIn. I’m constantly exploring the latest tech news and experimenting with new ideas to transition from a student to a capable engineer.`,
   email: "gaganreddyas@gmail.com",
     location: "Bengaluru, India",
     socials: {
