@@ -137,9 +137,83 @@ export const mockData = {
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
     { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
   ],
-  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes"],
+  blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes", "Technology"],
 
   blogPosts: [
+    {
+      title: "From \"LO\" to Limitless: The Story of the Internet and How It Really Moves Our World",
+      slug: "internet-from-lo-to-limitless",
+      category: "Technology",
+      readingTime: 5,
+      date: "2025-12-05",
+      excerpt: "A curious look at how the internet began with a failed \"LOGIN\" message, how it evolved into a global nervous system, and how every video, message, and meme today travels as tiny packets across the world.",
+      imageUrl: "/images/from-lo-to-internet-cover.webp",
+      content: `# From "LO" to Limitless: The Story of the Internet and How It Really Moves Our World
+
+If you’ve ever streamed a movie, played an online game, or spent hours scrolling through reels, it’s easy to forget that the internet wasn’t born as the massive digital universe it is today.
+It actually began with a glitch.
+
+## The First Message: Two Letters That Changed Everything
+
+In 1969, researchers tried to send the word **“LOGIN”** from UCLA to Stanford.
+Simple enough—except the system crashed after the second letter.
+
+So the first message ever sent across what would become the internet wasn’t profound or poetic.
+It was just: **“LO.”**
+
+Somehow those two characters became the spark for the communication network that billions of devices use every second. And that contrast—tiny beginnings to infinite possibilities—still feels surreal.
+
+## How the Internet Really Sends Your Videos, Photos, and Memes
+
+One of the most mind-blowing things I discovered is how information actually moves across the internet.
+
+When you upload a video, it **isn’t** sent as a huge file squeezing through a single lane.
+That would be painfully slow and incredibly risky.
+
+Instead, the internet slices your video into thousands of tiny units called **packets**.
+
+Each packet:
+
+- Finds **its own path** through the network.
+- May arrive **out of order**.
+- Takes **different routes** depending on congestion and distance.
+
+Your device then reassembles them like puzzle pieces and—almost instantly—your video plays.
+
+It’s messy.
+It’s chaotic.
+It’s brilliant.
+
+This “packet-switching” idea is the reason global communication works smoothly even when millions of people stream, chat, and upload at the same time.
+
+## From Two Universities to a Planet-Wide Nervous System
+
+What started as a link between two research labs in California slowly grew into:
+
+- A network connecting universities
+- Then governments
+- Then businesses
+- And eventually every device from your laptop to your fridge
+
+Today, the internet functions like a digital nervous system for humanity.
+It powers our creativity, education, entertainment, careers, communication—everything.
+
+AI models learn from it.
+Space missions depend on it.
+Entire economies move on top of it.
+
+And it all loops back to a message that didn’t even finish sending.
+
+## Why This Story Still Matters
+
+We often imagine technology as something that arrives fully polished. But the internet’s origin reminds us that innovation begins with fragile ideas, failed attempts, and surprising breakthroughs.
+
+The moment those two letters made it across California, the world changed—but nobody knew it yet.
+
+Today, every tap on your phone sends signals racing across oceans and continents in milliseconds. A reel, a message, a voice note… they’re all tiny packets traveling through a global web built on decades of curiosity and experimentation.
+
+If that’s not fascinating, I don’t know what is.`
+    },
     
     { title: "AI in 2025: Practical Impact, Not Hype", slug: "ai-in-2025-practical-impact", category: "Technical Walkthroughs", readingTime: 9, date: "2025-08-30", excerpt: "Where AI is actually delivering ROI today and how teams can adopt it responsibly.", imageUrl: "https://placehold.co/400x300/0EA5E9/FFFFFF?text=AI+2025", content: [
       "AI in 2025 has moved beyond proof-of-concepts. The most mature wins are in retrieval-augmented generation (RAG), customer support automation, code assist, and forecasting. Organizations that succeed treat AI like a product capability—not a novelty.",

@@ -34,8 +34,14 @@ export default function BlogPost() {
           <span>{post.date}</span>
           <span>{post.readingTime} min read</span>
         </div>
-        <div className="mt-6 w-full rounded overflow-hidden bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-          <img src={post.imageUrl} alt={post.title} className="w-full object-contain object-center max-h-[48vh] md:max-h-96" />
+        <div className="mt-6 w-full rounded overflow-hidden bg-slate-100 dark:bg-slate-800">
+          <div className="relative aspect-[4/3] md:aspect-[16/9]">
+            <img
+              src={post.imageUrl}
+              alt={post.title}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
         </div>
         <article className="prose dark:prose-invert max-w-none mt-8">
           {Array.isArray(post.content)
