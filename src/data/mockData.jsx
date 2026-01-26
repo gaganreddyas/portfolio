@@ -58,6 +58,29 @@ Beyond development, I have a strong foundation in problem-solving, having comple
   ],
   featuredProjects: [
     {
+      title: "ServiceDesk",
+      description: "A role-based complaint management system streamlining ticket tracking, prioritization, and resolution for internal support teams.",
+      techStack: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "JWT"],
+      liveUrl: "https://complaint-service-management-system.vercel.app",
+      githubUrl: "https://github.com/gaganreddyas/complaint-service-management-system",
+      imageUrl: "/ServiceDesk_Hero_Banner1.png",
+      features: [
+        "Role-based access (Admin/Agent)",
+        "Ticket lifecycle (Open to Closed)",
+        "Priority & SLA tracking",
+        "Secure JWT authentication",
+        "Responsive enterprise UI"
+      ],
+      caseStudy: {
+        challenge: "Informal complaint handling via email leads to missed deadlines and lack of accountability. Required a structured system to define ownership and track resolution.",
+        solution: "Built a centralized MERN-stack platform with secure RBAC, allowing admins to monitor requests while agents handle resolution through a transparent status workflow.",
+        learning: "Mastered role-based authorization patterns, designed complex state workflows beyond simple CRUD, and handled production deployment constraints."
+      },
+      date: "2026-01-20",
+      slug: "service-desk",
+      readingTime: "3 min"
+    },
+    {
       title: "TaskMaster AI",
       description: "A modern task management app with AI-powered priority scoring, built on a MERN stack with a clean monorepo setup for quick startup and deployment.",
       techStack: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Vercel", "Render"],
@@ -129,6 +152,7 @@ Beyond development, I have a strong foundation in problem-solving, having comple
     
   ],
   allProjects: [
+  { title: "ServiceDesk", category: "Fullstack", tech: ["React", "Node.js", "MongoDB", "Tailwind"], desc: "A role-based complaint management system streamlining ticket tracking, prioritization, and resolution for internal support teams.", liveUrl: "https://complaint-service-management-system.vercel.app", githubUrl: "https://github.com/gaganreddyas/complaint-service-management-system", imageUrl: "/ServiceDesk_Hero_Banner1.png" },
   { title: "TaskMaster AI", category: "Fullstack", tech: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Vercel", "Render"], desc: "A modern task management app with AI-powered priority scoring, built on a MERN stack with a clean monorepo setup for quick startup and deployment.", liveUrl: "https://taskmaster-ai-puce.vercel.app/", githubUrl: "https://github.com/gaganreddyas/taskmaster-ai", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/taskmaster-ai/main/images/thumbnail.png" },
   { title: "MediFundr", category: "Fullstack", tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "Fetch API", "dotenv", "CORS"], desc: "Smart medical equipment loan calculator that computes EMI with live USD→INR conversion, delivered via a minimal frontend and a Node/Express API backend.", liveUrl: "https://medi-fundr.vercel.app/", githubUrl: "https://github.com/gaganreddyas/MediFundr", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/MediFundr/main/assets/banner.jpg" },
   { title: "Language Guesser", category: "Backend/CLI", tech: ["Node.js", "franc", "langs"], desc: "Simple Node.js CLI that predicts a text’s language using franc for detection and langs for human-readable names.", liveUrl: "#", githubUrl: "https://github.com/gaganreddyas/language-guesser", imageUrl: "https://placehold.co/400x300/6366F1/FFFFFF?text=Language+Guesser" },
