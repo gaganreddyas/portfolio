@@ -23,12 +23,39 @@ const AboutSection = () => {
                     </div>
                 </motion.div>
                 <motion.div className="md:col-span-3" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.6, delay: 0.2 }}>
-                    <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">{mockData.personalInfo.bio}</p>
-                    <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-6">
-                        {mockData.stats.map((stat, index) => (
-                            <div key={index} className="text-center">
-                                <p className="text-3xl font-bold text-blue-500 dark:text-blue-400">{stat.value}{index === 1 ? '' : '+'}</p>
-                                <p className="text-sm text-slate-500 dark:text-slate-400">{stat.label}</p>
+                    
+                    <h3 className="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-2">
+                        {mockData.about.headline}
+                    </h3>
+                    <p className="text-blue-600 dark:text-blue-400 font-medium mb-6">
+                        {mockData.about.subHeadline}
+                    </p>
+                    <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed mb-6">
+                        {mockData.about.description}
+                    </p>
+
+                    <ul className="space-y-3 mb-8">
+                        {mockData.about.features.map((feature, index) => (
+                            <li key={index} className="flex items-start text-slate-600 dark:text-slate-300">
+                                <span className="mr-3 text-blue-500 mt-1">
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                                {feature}
+                            </li>
+                        ))}
+                    </ul>
+
+                    <div className="grid grid-cols-3 gap-4 border-t border-slate-200 dark:border-slate-700 pt-8">
+                        {mockData.about.stats.map((stat, index) => (
+                            <div key={index}>
+                                <p className="text-2xl font-bold text-slate-800 dark:text-slate-100">
+                                    {stat.value}
+                                </p>
+                                <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                                    {stat.label}
+                                </p>
                             </div>
                         ))}
                     </div>

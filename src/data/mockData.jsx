@@ -19,6 +19,21 @@ Beyond development, I have a strong foundation in problem-solving, having comple
     },
     resumeUrl: "/Gagan_Reddy_AS_Resume.pdf", // Placeholder
   },
+  about: {
+    headline: "Full-Stack Developer & Cloud Practitioner",
+    subHeadline: "Building scalable web solutions with Java, React, and AWS.",
+    description: "I am a final-year B.Tech IT student focused on shipping real-world software. I bridge the gap between frontend interfaces and robust backend logic, delivering end-to-end solutions that are secure, efficient, and cloud-ready.",
+    features: [
+      "AWS Certified Cloud Practitioner.",
+      "Strong DSA foundation in Java (NPTEL).",
+      "15+ real, working projects."
+    ],
+    stats: [
+      { value: "15+", label: "Projects Built" },
+      { value: "AWS", label: "Cloud Integration" },
+      { value: "Java", label: "DSA (NPTEL)" }
+    ]
+  },
   stats: [
     { label: "Projects Delivered", value: 15 },
     { label: "Lines of Code", value: "50k" },
@@ -39,16 +54,18 @@ Beyond development, I have a strong foundation in problem-solving, having comple
     database: [
       { name: "MongoDB", level: "Experienced" },
       { name: "MySQL", level: "Experienced" },
-      { name: "PostgreSQL", level: "Proficient" },
     ],
     toolsAndCloud: [
       { name: "Git & GitHub", level: "Experienced" },
-      { name: "AWS (S3, EC2)", level: "Experienced" },
+      { name: "AWS (S3, EC2)", level: "Proficient" },
       { name: "Vercel", level: "Experienced" },
       { name: "Postman", level: "Experienced" },
     ],
     softSkills: [
-        "Problem Solving", "Team Collaboration", "Agile Development", "Effective Communication"
+      "Problem Solving",
+      "Project-Driven Learning",
+      "Team Collaboration",
+      "Effective Communication"
     ]
   },
   learning: [
@@ -104,6 +121,28 @@ Beyond development, I have a strong foundation in problem-solving, having comple
       readingTime: "4 min"
     },
     {
+      title: "This Portfolio Website",
+      description: "A meta-project showcasing my skills. Built with React, Tailwind CSS and Framer Motion for smooth animations.",
+      techStack: ["React", "Framer Motion", "Tailwind CSS", "Vite"],
+      liveUrl: "/",
+      githubUrl: "https://github.com/gaganreddyas/portfolio",
+      imageUrl: "/portfolio_image.png",
+      features: [
+        "Responsive, modern UI",
+        "Dark/Light theme support",
+        "Smooth page transitions",
+        "Dynamic project showcase"
+      ],
+      caseStudy: {
+        challenge: "To build a professional portfolio that effectively communicates my skills and projects.",
+        solution: "Developed a single-page application using React and Tailwind CSS, featuring a clean layout and interactive elements.",
+        learning: "Deepened understanding of React hooks, component composition, and CSS animations."
+      },
+      date: "2026-01-27",
+      slug: "portfolio-website",
+      readingTime: "2 min"
+    },
+    /* {
       title: "MediFundr",
       description: "Smart medical equipment loan calculator that computes EMI with live USD→INR conversion, delivered via a minimal frontend and a Node/Express API backend.",
       techStack: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "Fetch API", "dotenv", "CORS"],
@@ -148,22 +187,22 @@ Beyond development, I have a strong foundation in problem-solving, having comple
       date: "2025-10-17",
       slug: "choco-factory-revamped",
       readingTime: "2 min"
-    },
+    }, */
     
   ],
   allProjects: [
   { title: "ServiceDesk", category: "Fullstack", tech: ["React", "Node.js", "MongoDB", "Tailwind"], desc: "A role-based complaint management system streamlining ticket tracking, prioritization, and resolution for internal support teams.", liveUrl: "https://complaint-service-management-system.vercel.app", githubUrl: "https://github.com/gaganreddyas/complaint-service-management-system", imageUrl: "/ServiceDesk_Hero_Banner1.png" },
   { title: "TaskMaster AI", category: "Fullstack", tech: ["React", "Node.js", "Express", "MongoDB", "Gemini AI", "Vercel", "Render"], desc: "A modern task management app with AI-powered priority scoring, built on a MERN stack with a clean monorepo setup for quick startup and deployment.", liveUrl: "https://taskmaster-ai-puce.vercel.app/", githubUrl: "https://github.com/gaganreddyas/taskmaster-ai", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/taskmaster-ai/main/images/thumbnail.png" },
-  { title: "MediFundr", category: "Fullstack", tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "Fetch API", "dotenv", "CORS"], desc: "Smart medical equipment loan calculator that computes EMI with live USD→INR conversion, delivered via a minimal frontend and a Node/Express API backend.", liveUrl: "https://medi-fundr.vercel.app/", githubUrl: "https://github.com/gaganreddyas/MediFundr", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/MediFundr/main/assets/banner.jpg" },
+  // { title: "MediFundr", category: "Fullstack", tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "Fetch API", "dotenv", "CORS"], desc: "Smart medical equipment loan calculator that computes EMI with live USD→INR conversion, delivered via a minimal frontend and a Node/Express API backend.", liveUrl: "https://medi-fundr.vercel.app/", githubUrl: "https://github.com/gaganreddyas/MediFundr", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/MediFundr/main/assets/banner.jpg" },
   { title: "Language Guesser", category: "Backend/CLI", tech: ["Node.js", "franc", "langs"], desc: "Simple Node.js CLI that predicts a text’s language using franc for detection and langs for human-readable names.", liveUrl: "#", githubUrl: "https://github.com/gaganreddyas/language-guesser", imageUrl: "https://placehold.co/400x300/6366F1/FFFFFF?text=Language+Guesser" },
   { title: "Weather Web App", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Weather API", "GitHub Pages"], desc: "Clean, responsive weather dashboard showing current conditions, hourly timeline, and air-quality highlights, deployed on GitHub Pages.", liveUrl: "https://gaganreddyas.github.io/Weather-Web-App/", githubUrl: "https://github.com/gaganreddyas/Weather-Web-App", imageUrl: "https://placehold.co/400x300/0EA5E9/FFFFFF?text=Weather+App" },
-  { title: "Choco Factory Revamped", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Google Fonts (Poppins, Playfair Display)", "AWS S3 (static hosting)"], desc: "A premium, chocolate-themed responsive landing page showcasing elegant UI, smooth animations, and mobile-friendly navigation.", liveUrl: "https://choco-factory-revamped7.s3.us-east-1.amazonaws.com/Choco-Factory-Revamped-main/index.html", githubUrl: "https://github.com/gaganreddyas/Choco-Factory-Revamped", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/Choco-Factory-Revamped/main/assets/Caro_9.webp" },
+  // { title: "Choco Factory Revamped", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Google Fonts (Poppins, Playfair Display)", "AWS S3 (static hosting)"], desc: "A premium, chocolate-themed responsive landing page showcasing elegant UI, smooth animations, and mobile-friendly navigation.", liveUrl: "https://choco-factory-revamped7.s3.us-east-1.amazonaws.com/Choco-Factory-Revamped-main/index.html", githubUrl: "https://github.com/gaganreddyas/Choco-Factory-Revamped", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/Choco-Factory-Revamped/main/assets/Caro_9.webp" },
   { title: "scoreKeeper", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "Bulma CSS", "GitHub Pages"], desc: "Lightweight, mobile-friendly score tracking app for quick player/team setup, instant updates, and easy resets during games.", liveUrl: "https://gaganreddyas.github.io/scoreKeeper/", githubUrl: "https://github.com/gaganreddyas/scoreKeeper", imageUrl: "https://raw.githubusercontent.com/gaganreddyas/scoreKeeper/main/assets/ping_pong.avif" },
   { title: "XOX-Game", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"], desc: "Classic two-player Tic‑Tac‑Toe with clean UI, turn alternation, instant win/draw detection, and replay controls.", liveUrl: "https://gaganreddyas.github.io/XOX-Game/", githubUrl: "https://github.com/gaganreddyas/XOX-Game", imageUrl: "https://placehold.co/400x300/EF4444/FFFFFF?text=XOX-Game" },
   { title: "Stop-Watch", category: "Frontend", tech: ["HTML5", "CSS3", "JavaScript", "GitHub Pages"], desc: "Space‑themed stopwatch with keyboard shortcuts, lap tracking, and a clean, responsive UI, deployed on GitHub Pages.", liveUrl: "https://gaganreddyas.github.io/Stop-Watch/", githubUrl: "https://github.com/gaganreddyas/Stop-Watch", imageUrl: "https://placehold.co/400x300/111827/FFFFFF?text=Stop-Watch", features: ["Start/Pause (Space), Reset (Backspace), Lap (Enter), Clear Lap (F2)", "Lap list with clear option", "Accurate timing with millisecond display", "Responsive, keyboard-first UX", "Lightweight, no external dependencies"], caseStudy: { challenge: "Design a stopwatch that feels instantaneous and keyboard-first, while keeping the codebase dependency-free and accessible.", solution: "Implemented a precise timer loop with debounced controls, mapped ergonomic keyboard shortcuts, and structured UI for quick scanning of laps and controls.", learning: "Refined event handling for keyboard inputs, ensured timing accuracy and drift handling, and polished a responsive, minimalist interface for focus and speed." }, featured: false, date: "2025-10-17", slug: "stop-watch", readingTime: "1 min" },
     
     { title: "Weather App (API Integration)", category: "Frontend", tech: ["React", "API"], desc: "Fetches and displays weather data.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/F59E0B/FFFFFF?text=Weather+App" },
-    { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "https://placehold.co/400x300/EC4899/FFFFFF?text=Portfolio" },
+    { title: "This Portfolio Website", category: "Frontend", tech: ["React", "Framer Motion"], desc: "A meta-project showcasing my skills.", liveUrl: "#", githubUrl: "#", imageUrl: "/portfolio_image.png" },
   ],
   blogCategories: ["All", "Project Deep Dives", "Technical Walkthroughs", "Learning Notes", "Technology"],
 
